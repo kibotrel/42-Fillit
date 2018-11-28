@@ -6,7 +6,7 @@
 #    By: kibotrel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/26 14:18:48 by kibotrel          #+#    #+#              #
-#    Updated: 2018/11/26 17:09:23 by kibotrel         ###   ########.fr        #
+#    Updated: 2018/11/28 16:26:56 by kibotrel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ INCDIR		= ./includes/													\
 OBJDIR		= objs/
 LIBDIR		= libft/
 
-SRC			= main.c	parsing.c
+SRC			= main.c	parsing.c	utils.c
 
 INCPARAMS	= $(foreach d, $(INCDIR), -I$d)
 CSRC		= $(addprefix $(SRCDIR), $(SRC))
