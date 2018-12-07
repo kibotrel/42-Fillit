@@ -4,7 +4,6 @@ Another project at 42. In this one, we need to parse one **and only one** file, 
 
 Here's an example : 
 Consider we're using this file as argument of our program
-[Imgur](https://i.imgur.com/PiW4Khy.png)` 
 This project was done in collaboration with [@abaurens](https://github.com/abaurens)
 
 *tetriminos*¹ : Tetriminos are defined by a combination of four connected points or cells.
