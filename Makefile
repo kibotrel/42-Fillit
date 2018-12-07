@@ -6,7 +6,7 @@
 #    By: abaurens <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/27 16:23:33 by abaurens          #+#    #+#              #
-#    Updated: 2018/12/07 14:47:24 by kibotrel         ###   ########.fr        #
+#    Updated: 2018/12/07 15:01:22 by kibotrel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,10 +54,14 @@ $(OBJDIR)%.o: $(SRCDIR)%.c
 	@echo "\033[33m      - Compiling :\033[0m" $<
 	@$(CC) $(CFLAGS) -c $< -o $@
 
+# Deleting all .o files and then the directory where they were located
+
 clean:
 	@clear
 	@echo "\033[32m***   Deleting all object files   ...   ***\n\033[0m"
 	@rm -rf $(COBJ)
+
+# Deleting the binary after cleaning up all .o files
 
 fclean:	clean
 	@echo "\033[32m***   Deleting executable file    ...   ***\n\033[0m"
