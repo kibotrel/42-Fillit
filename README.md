@@ -16,7 +16,7 @@ $> make
 
 Once the program is compiled, run it with the following command line :
 ```
-$> ./fdf 'file'
+$> ./fillit 'file'
 ```
 The given file must contains a valid list of tetriminos otherwise an error is displayed. If, at any point during the process, an error occurs, the allocated memory is freed and an an error message is written on the standard output before the program's end.
 
